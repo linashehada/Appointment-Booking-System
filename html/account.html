@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon" href="../img/logo.png">
+<head>
+      <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>E-Dental Clinic</title>
+      <link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/clinic.css">
+	 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+		
+
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		
+	<link href="../css/footer.css" rel="stylesheet" type="text/css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+      <div class="wrapper">
+            <header>
+
+                                   <nav>
+
+                        <div class="menu-icon">
+                              <i class="fa fa-bars fa-2x"></i>
+                        </div>
+
+                        <div class="logo">
+                          <img src="../img/logo.png" width="150">
+                        </div>
+
+                         <div class="menu">
+                              <ul class="main-nav">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="AboutUs.html">About Us</a></li>
+                                    <li><a href="contact.html">Contact</a></li> 
+									<li><a href="clinic.html">Clinic</a></li>
+									<li><a href="LogIn.html">Book Appointment</a></li>
+								   <li class="active"><a href="account.html">Account</a></li>
+                                   
+                              </ul>
+                        </div>
+                  </nav>
+
+				
+				
+ <div class="services-section">
+      <div class="inner-width">
+	  <br> <br>
+        <h1 class="section-title"> My Account </h1>
+        <div class="border"></div>
+        <div class="services-container">
+
+          <div class="service-box">
+           <a href="#"><div class="service-icon">
+              <i class="fas fa-calendar-alt"></i>
+            </div></a>
+            <div class="service-title"> My appointments</div>
+            <div class="service-desc">
+             You can follow your current and upcoming appointments.
+            </div>
+          </div>
+		  
+ <div class="service-box">
+           <a href="#"><div class="service-icon">
+              <i class="fas fa-calendar-check"></i>
+            </div></a>
+            <div class="service-title"> Last appointments </div>
+            <div class="service-desc">
+              You can find your previous appointments that have finished.
+            </div>
+          </div>
+		  
+          <div class="service-box">
+            <a href="#"><div class="service-icon">
+              <i class="fas fa-gear"></i>
+            </div></a>
+			
+            <div class="service-title"> Setting  </div>
+            <div class="service-desc">
+              You manage and change in your account.
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+				
+            </header>
+
+      </div>
+
+
+
+<footer class="footer-distributed">
+
+	<div class="footer-center">
+
+				<div class="">
+					<i class="fa fa-map-marker"></i>
+					<p><a href="#">A'seeb-Muscat-Oman</a></p>
+				<br> 
+					<i class="fa fa-phone"></i>
+					<p><a href="tel:+968 9617 8990">+968 9617 8990</a></p>
+				<br>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@company.com">E10.Eclinic@gmail.com </a></p>
+				</div>
+
+			</div>
+
+
+				<div class="footer-icons">
+				
+  <button class="facebook" style="font-size:25px" title="Facebook"><i href="https://www.facebook.com" class="fa fa-facebook"></i></button> <br><br>
+  <button class="twitter" style="font-size:25px" title="Twitter"><i href="https://twitter.com/Eclinic11?s=08"  class="fa fa-twitter"></i></button> <br><br>
+  <button class="instagram" style="font-size:25px" title="Instagram"><i href="https://instagram.com/eclinic_1?igshid=18s9bknlf2rg8" class="fa fa-instagram"></i></button> <br><br>
+ 
+ 
+ <button class="question" title="Ask a question" onclick="document.getElementById('id01').style.display='block'">
+ <i style="font-size:25px" class="fa fa-comments-o"></i></button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+     
+    </div>
+    <div class="container">
+      <label for="text"><b>What is your question</b></label>
+      <input type="text" placeholder="Enter your question" name="question" required>
+
+      <button class="submit" type="submit">Submit</button>
+      
+    </div>
+
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+ 
+				</div>
+
+		</footer>
+
+	
+      <script type="text/javascript">
+
+      // Menu-toggle button
+
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+
+
+      </script>
+
+
+</script>
+</body>
+</html>

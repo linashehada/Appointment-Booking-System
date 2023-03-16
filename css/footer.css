@@ -1,0 +1,291 @@
+.footer-distributed{
+	
+	background-image: url(../img/foot.jpg);
+	
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 55px 50px;
+	margin-top: 80px;
+}
+
+
+
+.footer-distributed .footer-center i{
+	background-color: #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: deeppink;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  deeppink;
+	text-decoration: none;
+}
+
+
+
+.footer-distributed .footer-icons{
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+	
+}
+
+.footer-distributed .footer-center i{
+	background-color: #fff;
+    color: deeppink;
+	text-align: center;
+	line-height: 35px;
+    transition:  0.5s ease-in;
+	border-radius: 50%;
+	margin: 20px 20px;
+	vertical-align: middle;
+
+	}
+.footer-distributed .footer-center i:hover{
+	background-color: #000;
+	color: #fff;
+    opacity: 0.7;
+}
+
+
+.facebook
+{
+  position: fixed;
+  border-radius: 50%;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  transition:  0.5s ease-in;
+  background-color: #ffb8c6;
+  margin: -180px -15px;
+  vertical-align: middle;
+}
+
+
+.facebook:hover {
+  background-color: #fff;
+}
+
+
+.twitter{
+  position: fixed;
+  border-radius: 50%;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  transition:  0.5s ease-in;
+  background-color: #ffb8c6;
+  margin: -150px -15px;
+  vertical-align: middle;
+}
+
+
+.twitter:hover {
+  background-color: #fff;
+}
+
+
+.instagram{
+  position: fixed;
+  border-radius: 50%;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  transition:  0.5s ease-in;
+  background-color: #ffb8c6;
+  margin: -120px -15px;
+  vertical-align: middle;
+}
+
+
+.instagram:hover {
+  background-color: #fff;
+}
+
+
+.question{
+  position: fixed;
+  border-radius: 40%;
+  display: block;
+  text-align: center;
+  padding: 20px;
+  transition:  0.5s ease-in;
+  background-color: #ffb8c6;
+  margin: -90px -25px;
+  vertical-align: middle;
+}
+
+
+.question:hover {
+  background-color: #fff;
+
+}
+
+
+
+
+
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+
+}
+
+
+.slidecontainer {
+  width: auto;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border: 0;
+  background: #0C98A9;
+  cursor: pointer;
+ 
+}
+
+.slider::-moz-range-thumb {
+  width: 23px;
+  height: 25px;
+  border: 0;
+  background: url('contrasticon.png');
+  cursor: pointer;
+sor: pointer;
+}
+
+
+/* Full-width input fields */
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button.submit{
+  background-color: #0C98A9;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button.submit:hover {
+  opacity: 0.7;
+}
+
+
+/* Center the image and position the close button */
+.imgcontainer {
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+  

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon" href="../img/logo.png">
+<head>
+      <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>E-Dental Clinic</title>
+      <link rel="stylesheet" href="../css/style.css">
+	 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+		
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	<link href="../css/footer.css" rel="stylesheet" type="text/css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+      <div class="wrapper">
+	
+            <header>
+                      <nav>
+
+                    <div class="menu-icon">
+                              <i class="fa fa-bars fa-2x"></i>
+                        </div>
+
+                        <div class="logo">
+                          <img src="../img/logo.png" width="150">
+                        </div>
+
+                         <div class="menu">
+                              <ul class="main-nav">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="AboutUs.html">About Us</a></li>
+                                    <li><a href="contact.html">Contact</a></li> 
+									<li class="active"><a href="clinic.html">Clinic</a></li>
+									<li><a href="LogIn.html">Book Appointment</a></li>
+								   <li><a href="account.html">Account</a></li>
+                                    
+                              </ul>
+                        </div>
+                  </nav>
+                 
+
+ 
+
+<br> <br> <br> <br> <br> <br> <br> <div class="bg">  
+<section class="intro-area white" id="intro">  
+<br>
+<h2> Booking  </h2>
+<div class="sub-heading">
+<p> 
+<a href="clinic.html"> Clinic </a> &gt;&gt; <a href="doctor.html"> Doctors </a> &gt;&gt; <a href="date.html">Date & Time </a> &gt;&gt; <a href="booking.html"> Book </a> &gt;&gt; </p>
+</div>
+
+
+<div class="container1">
+<form action="/action_page.php"> 
+
+<label for="fname"> First Name </label>
+<input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+<label for="lname"> Last Name </label>
+<input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+<label for="email"> E-Mail </label>
+<input type="email" id="email" name="email" placeholder="Your E-Mail.." required>
+
+
+<label for="phone"> phone </label>
+<input type="tel" id="phone" name="phone" placeholder="Your Number.." required>
+
+
+<label for="cname"> Clinic Name </label>
+<input type="text" id="cname" name="clinicname" placeholder="Clinic name.." required>
+
+
+<label for="dname"> Doctor Name </label>
+<input type="text" id="dname" name="doctorname" placeholder="Doctor name.." required>
+<br> 
+
+
+<label for="fname"> Date & Time </label>
+<input type="text" id="datetime" name="data" placeholder="Date & Time.." required>
+
+
+<button type="submit" class="cancelbtn"> Submit </button>
+</form>
+</div>
+</section>	
+
+          
+</div>
+<footer class="footer-distributed">
+
+	<div class="footer-center">
+
+				<div class="">
+					<i class="fa fa-map-marker"></i>
+					<p><a href="#">A'seeb-Muscat-Oman</a></p>
+				<br> 
+					<i class="fa fa-phone"></i>
+					<p><a href="tel:+968 9617 8990">+968 9617 8990</a></p>
+				<br>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@company.com">E10.Eclinic@gmail.com </a></p>
+				</div>
+
+			</div>
+
+
+				<div class="footer-icons">
+				
+  <button class="facebook" style="font-size:25px" title="Facebook"><i href="https://www.facebook.com" class="fa fa-facebook"></i></button> <br><br>
+  <button class="twitter" style="font-size:25px" title="Twitter"><i href="https://twitter.com/Eclinic11?s=08"  class="fa fa-twitter"></i></button> <br><br>
+  <button class="instagram" style="font-size:25px" title="Instagram"><i href="https://instagram.com/eclinic_1?igshid=18s9bknlf2rg8" class="fa fa-instagram"></i></button> <br><br>
+ 
+ 
+ <button class="question" title="Ask a question" onclick="document.getElementById('id01').style.display='block'">
+ <i style="font-size:25px" class="fa fa-comments-o"></i></button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+     
+    </div>
+    <div class="container">
+      <label for="text"><b>What is your question</b></label>
+      <input type="text" placeholder="Enter your question" name="question" required>
+
+      <button class="submit" type="submit">Submit</button>
+      
+    </div>
+
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+ 
+				</div>
+
+		</footer>
+
+	
+	  </header>
+</div> 
+
+      
+
+      <script type="text/javascript">
+
+      // Menu-toggle button
+
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+
+
+      </script>
+
+
+</script>
+</body>
+<style>
+body{
+
+background-image: url("../img/bac.jpg");
+	  height: 100%;
+	  background-position: center;
+	  background-repeat: no-repeat;
+}
+
+
+ .intro-area
+{
+	position: relative;
+	padding: 100px 0px;
+	text-align: center;
+}
+h2
+{
+	
+	color: deeppink;
+}
+
+a
+{
+ color: #0C98A9;
+ 
+}
+*{box-sizing: border-box;}
+
+input[type=text], input[type=email], input[type=tel], select, textarea{
+  width: 100%;
+  padding:12px;
+  border: 2px solid #0C98A9;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+.container1
+{
+  border-radius: 5px;
+  border: 3px solid #0C98A9;
+  background-color: pink;
+  padding: 20px;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.cancelbtn {
+  width: 20%;
+  padding: 10px 18px;
+  background-color: #0C98A9;
+  transition: 0.5s ease-in;
+  color: white;
+  border: 2px solid #0C98A9;
+  border-radius: 20px;
+  margin-left: 40%;
+}  
+ 
+button:hover {
+  background-color: deeppink;
+  border: 2px solid #0C98A9;
+}
+
+
+</style>
+</html>

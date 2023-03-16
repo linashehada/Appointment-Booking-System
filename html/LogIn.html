@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon" href="../img/logo.png">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>E-Dental Clinic</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+	<link href="../css/footer.css" rel="stylesheet" type="text/css">
+	<link href="../css/login.css" rel="stylesheet" type="text/css">
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+</head>
+
+
+<body>
+ 
+      <div class="wrapper">
+	   <header>
+            <div class="container">
+            <div class="row">
+
+                 <nav>
+
+                      
+                        <div class="logo">
+                          <img src="../img/logo.png" width="150" >
+                        </div>
+
+                         <div class="menu">
+                              <ul class="main-nav">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="AboutUs.html">About Us</a></li>
+                                    <li><a href="contact.html">Contact</a></li> 
+									<li ><a href="clinic.html">Clinic</a></li> 
+									<li class="active"><a href="LogIn.html">Book Appointment</a></li>
+								    <li><a href="account.html">Account</a></li>
+                                   
+                              </ul>
+                        </div>
+                  </nav>
+				</div>
+				</div>
+		
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+   ></script>
+   
+    
+
+  	<div class="login-reg-panel">
+		<div class="login-info-box">
+			<h2>Have an account?</h2>
+			<p>Already a Member?</p>
+			<label id="label-register" for="log-reg-show">Login</label>
+			<input type="radio" name="active-log-panel" id="log-reg-show"  checked="checked">
+		</div>
+							
+		<div class="register-info-box">
+			<h2>Don't have an account?</h2>
+			<p>If you are a New Member</p>
+			<label id="label-login" for="log-login-show">Register</label>
+			<input type="radio" name="active-log-panel" id="log-login-show">
+		</div>
+							
+		<div class="white-panel">
+			<form action="action_page.php">
+			<div class="login-show">
+				<h1>LOGIN</h1>
+				<input type="email" placeholder="Email" required>
+				<input type="password" placeholder="Password" required>
+				<input type="submit" value="Login">
+				<h5 href="">Forgot password?</h5>
+			</div> 
+			</form>
+				<form action="action_page.php">
+			<div class="register-show">
+				<h1>REGISTER</h1>
+				<input type="email" placeholder="Email" required>
+				<input type="password" placeholder="Password" required>
+				<input type="password" placeholder="Confirm Password" required>
+				<input type="submit" value="Register">
+			</div>
+					</form>
+		</div>
+	</div>
+  <script>
+    $(document).ready(function(){
+    $('.login-info-box').fadeOut();
+    $('.login-show').addClass('show-log-panel');
+});
+
+
+$('.login-reg-panel input[type="radio"]').on('change', function() {
+    if($('#log-login-show').is(':checked')) {
+        $('.register-info-box').fadeOut(); 
+        $('.login-info-box').fadeIn();
+        
+        $('.white-panel').addClass('right-log');
+        $('.register-show').addClass('show-log-panel');
+        $('.login-show').removeClass('show-log-panel');
+        
+    }
+    else if($('#log-reg-show').is(':checked')) {
+        $('.register-info-box').fadeIn();
+        $('.login-info-box').fadeOut();
+        
+        $('.white-panel').removeClass('right-log');
+        
+        $('.login-show').addClass('show-log-panel');
+        $('.register-show').removeClass('show-log-panel');
+    }
+});
+
+
+
+    
+    
+</script>
+				
+            </header>
+		  
+	
+
+
+          
+      </div>
+
+
+</body> 
+
+<footer class="footer-distributed">
+
+	<div class="footer-center">
+
+				<div class="">
+					<i class="fa fa-map-marker"></i>
+					<p><a href="#">A'seeb-Muscat-Oman</a></p>
+				<br> 
+					<i class="fa fa-phone"></i>
+					<p><a href="tel:+968 9617 8990">+968 9617 8990</a></p>
+				<br>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@company.com">E10.Eclinic@gmail.com </a></p>
+				</div>
+
+			</div>
+
+
+				<div class="footer-icons">
+				
+  <button class="facebook" style="font-size:25px" title="Facebook"><i href="https://www.facebook.com" class="fa fa-facebook"></i></button> <br><br>
+  <button class="twitter" style="font-size:25px" title="Twitter"><i href="https://twitter.com/Eclinic11?s=08"  class="fa fa-twitter"></i></button> <br><br>
+  <button class="instagram" style="font-size:25px" title="Instagram"><i href="https://instagram.com/eclinic_1?igshid=18s9bknlf2rg8" class="fa fa-instagram"></i></button> <br><br>
+ 
+ 
+ <button class="question" title="Ask a question" onclick="document.getElementById('id01').style.display='block'">
+ <i style="font-size:25px" class="fa fa-comments-o"></i></button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+     
+    </div>
+    <div class="container">
+      <label for="text"><b>What is your question</b></label>
+      <input type="text" placeholder="Enter your question" name="question" required>
+
+      <button class="submit" type="submit">Submit</button>
+      
+    </div>
+
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+ 
+				</div>
+
+		</footer>
+
+	
+      <script type="text/javascript">
+
+      // Menu-toggle button
+
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+
+
+      </script>
+
+
+</script>
+
+</html>
